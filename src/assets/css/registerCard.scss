@@ -1,0 +1,97 @@
+.registerCard {
+  width: 350px;
+  height: 455px;
+  background: rgba(255,255,255,1);
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.12),0px 0 24px 0 rgba(0,0,0,0.35);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .closeBox {
+    width: 350px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 45px;
+
+    .el-icon-close {
+      font-size: 14px;
+      color: #CCCCCC;
+    }
+  }
+
+  img {
+    width: 144px;
+    height: 66px;
+    margin-bottom: 43px;
+  }
+
+  input {
+    width: 252px;
+    height: 33px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 19px;
+
+    &::-webkit-input-placeholder {
+      color: rgba(216,216,216,1);
+    }
+
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: rgba(216,216,216,1);
+    }
+
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: rgba(216,216,216,1);
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: rgba(216,216,216,1);
+    }
+  }
+
+  .identifyingCodeBox {
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 121px;
+    }
+
+    a {
+      width: 121px;
+      height: 32px;
+      background: #ccc;
+      text-align: center;
+      line-height: 32px;
+      font-size: 14px;
+      font-family: PingFangSC-Medium;
+      color: rgba(255,255,255,1);
+      border-radius: 6px;
+    }
+  }
+
+  .newPwd {
+    margin-top: 19px;
+  }
+
+  .resetBtn {
+    width: 251px;
+    height: 33px;
+    background: #ccc;
+    line-height: 33px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 39px;
+  }
+}

@@ -1,0 +1,152 @@
+.index {
+  .cardBox {
+    display: flex;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 360px;
+        height: 178px;
+      }
+
+      span {
+        font-size: 24px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(74,74,74,1);
+        margin-top: 15px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(129,129,130,1);
+    line-height: 45px;
+    margin-top: 55px;
+    text-align: center;
+  }
+
+  .timeBox {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    a {
+      width: 400px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 15px 20px;
+
+      h3 {
+        font-size: 24px;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: rgba(255,255,255,1);
+        line-height: 33px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: rgba(255,255,255,1);
+        line-height: 25px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .classRoomBox {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    margin-top: 54px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 295px;
+        height: 240px;
+      }
+
+      span {
+        font-size: 24px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(74,74,74,1);
+        line-height: 33px;
+        margin-top: 15px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(74,74,74,1);
+        line-height: 25px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .teacherBox {
+    display: flex;
+    padding: 0 190px;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+      }
+
+      span {
+        font-size: 24px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(74,74,74,1);
+        line-height: 33px;
+        margin-top: 25px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(74,74,74,1);
+        line-height: 25px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .Mongolia {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

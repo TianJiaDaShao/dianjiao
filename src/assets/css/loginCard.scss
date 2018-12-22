@@ -1,0 +1,97 @@
+.loginCard {
+  width: 350px;
+  height: 455px;
+  background: rgba(255,255,255,1);
+  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.12),0px 0 24px 0 rgba(0,0,0,0.35);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .closeBox {
+    width: 350px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 45px;
+
+    .el-icon-close {
+      font-size: 14px;
+      color: #CCCCCC;
+    }
+  }
+
+  img {
+    width: 108px;
+    height: 65px;
+    margin-bottom: 43px;
+  }
+
+  input {
+    width: 252px;
+    height: 33px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    &::-webkit-input-placeholder {
+      color: rgba(216,216,216,1);
+    }
+
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: rgba(216,216,216,1);
+    }
+
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: rgba(216,216,216,1);
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: rgba(216,216,216,1);
+    }
+  }
+
+  .pwdBox {
+    width: 252px;
+    height: 33px;
+    position: relative;
+    margin-top: 19px;
+
+    a {
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(217,217,217,1);
+      line-height: 20px;
+      position: absolute;
+      right: 9px;
+      top: 7px;
+    }
+  }
+
+  .login {
+    width: 251px;
+    height: 33px;
+    background: #5cba77;
+    line-height: 33px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 39px;
+  }
+
+  .wchat {
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(204,204,204,1);
+    line-height: 20px;
+    margin-top: 60px;
+  }
+}

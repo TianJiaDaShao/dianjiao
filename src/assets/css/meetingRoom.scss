@@ -1,0 +1,41 @@
+.meetingRoom {
+  background: #f4f4f4;
+  padding: 36px 100px;
+
+  .titleBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+
+    h2 {
+      font-family: STHeitiSC-Light;
+      font-size: 26px;
+      color: #000000;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 26px;
+        height: 24px;
+        margin-right: 9px;
+      }
+
+      span {
+        font-family: STHeitiSC-Light;
+        font-size: 26px;
+        color: #000000;
+      }
+    }
+  }
+
+  .label{
+    margin-top: 10px;
+  	font-family: STHeitiSC-Medium;
+  	font-size: 14px;
+  	color: #22c575;
+  }
+}

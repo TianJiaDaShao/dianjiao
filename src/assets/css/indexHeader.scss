@@ -1,0 +1,218 @@
+.indexHeader {
+  width: 1440px;
+  height: 679px;
+  position: relative;
+
+  .swiper-slide {
+    height: 679px;
+  }
+
+  header {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+
+    .headerLeft {
+      padding-left: 35px;
+      height: 50px;
+      display: flex;
+      align-items: flex-end;
+
+      h1 {
+        font-size: 36px;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: rgba(255,255,255,1);
+        padding-right: 15px;
+      }
+
+      a {
+        font-size: 22px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+
+        span {
+          color: #27C474;
+        }
+      }
+    }
+
+    .headerRight {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        height: 84px;
+
+        a {
+          font-size: 18px;
+          font-family: PingFangSC-Semibold;
+          font-weight: 600;
+          color: rgba(255,255,255,1);
+          text-decoration: none;
+          margin-right: 40px;
+        }
+      }
+
+      .border {
+        width: 3px;
+        height: 18px;
+        background: rgba(255,255,255,1);
+      }
+
+      .login {
+        font-size: 18px;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+        margin-left: 40px;
+      }
+
+      .register {
+        width: 84px;
+        height: 84px;
+        background: rgba(37,190,112,1);
+        border-radius: 0 0 8px 8px;
+        font-size: 18px;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: rgba(255,255,255,1);
+        line-height: 84px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 19px;
+        margin-right: 51px;
+      }
+
+      .el-dropdown-link {
+        margin-left: 40px;
+        font-size: 18px;
+        font-family: PingFangSC-Semibold;
+        font-weight: 600;
+        color: rgba(255,255,255,1);
+        line-height: 24px;
+        margin-right: 38px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          background: #fff;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  .searchCard {
+    width: 1440px - 256px - 261px;
+    height: 82px;
+    position: absolute;
+    bottom: 80px;
+    left: 256px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 82px;
+      height: 82px;
+      margin-right: 15px;
+    }
+
+    .el-date-editor--datetimerange.el-input,
+    .el-date-editor--datetimerange.el-input__inner {
+      border-radius: 8px 0 0 8px;
+    }
+
+    .personNumber {
+      width: 180px;
+      height: 40px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      background-size: 14px 14px;
+      border: 0;
+      padding-left: 55px;
+      font-size: 14px;
+      font-family: PingFangSC-Semibold;
+      font-weight: 600;
+      line-height: 40px;
+
+      &::-webkit-input-placeholder {
+        color: rgba(224,228,234,1);
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: rgba(224,228,234,1);
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: rgba(224,228,234,1);
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: rgba(224,228,234,1);
+      }
+    }
+
+    .address {
+      width: 180px;
+      height: 40px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      background-size: 10px 14px;
+      border: 0;
+      padding-left: 49px;
+      font-size: 14px;
+      font-family: PingFangSC-Semibold;
+      font-weight: 600;
+      line-height: 40px;
+
+      &::-webkit-input-placeholder {
+        color: rgba(224,228,234,1);
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: rgba(224,228,234,1);
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: rgba(224,228,234,1);
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: rgba(224,228,234,1);
+      }
+    }
+
+    a {
+      width: 162px;
+      height: 40px;
+      background: rgba(34,197,117,1);
+      box-shadow: 0 8px 16px 0 rgba(18,29,138,0.1);
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+      font-family: PingFangSC-Semibold;
+      font-weight: 600;
+      color: rgba(255,255,255,1);
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
