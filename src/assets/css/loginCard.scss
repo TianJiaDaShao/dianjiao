@@ -95,3 +95,69 @@
     margin-top: 60px;
   }
 }
+@media screen and (max-width: 750px) {
+  .loginCard {
+    width: 85vw;
+    height: 70vh;
+
+    .closeBox {
+      width: 85vw;
+      height: 10vh;
+      padding-right: 200px;
+
+      .el-icon-close {
+        font-size: 50px;
+        color: #CCCCCC;
+      }
+    }
+
+    img {
+      width: 60vw;
+      height: 20vw;
+      margin-bottom: 43px;
+    }
+
+    input {
+      width: 60vw;
+      height: 10vw;
+      border: 1pX solid #eee;
+    }
+
+    .pwdBox {
+      width: 60vw;
+      height: 10vw;
+
+      a {
+        font-size: 14px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(217,217,217,1);
+        line-height: 10vw;
+        position: absolute;
+        right: 9px;
+        top: 7px;
+      }
+    }
+
+    .login {
+      width: 60vw;
+      height: 10vw;
+      background: #5cba77;
+      line-height: 10vw;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 6px;
+      margin-top: 39px;
+    }
+
+    .wchat {
+      font-size: 14px;
+      font-family: PingFangSC-Medium;
+      font-weight: 500;
+      color: rgba(204,204,204,1);
+      line-height: 20px;
+      margin-top: 60px;
+    }
+  }
+}

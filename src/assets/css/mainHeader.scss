@@ -77,3 +77,19 @@ header {
     }
   }
 }
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+
+    .headerLeft {
+      opacity: 0;
+    }
+
+    .headerRight {
+      .register {
+        margin-right: 30px;
+        width: 150px;
+      }
+    }
+  }
+}

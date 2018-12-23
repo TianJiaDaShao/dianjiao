@@ -24,7 +24,7 @@
         </ul>
         <div class="border"></div>
         <a href="###" v-if="!userName" class="login" @click="_login">登 录</a>
-        <a href="###" v-if="!userName" class="register">注 册</a>
+        <a href="###" v-if="!userName" class="register" @click="_register">注 册</a>
         <el-dropdown v-else>
           <span class="el-dropdown-link">
             <img src="" alt="">
@@ -47,6 +47,10 @@
       <input class="address" type="text" placeholder="地址">
       <a href="###">搜索点教网</a>
     </div>
+    <van-popup v-model="show" position="bottom" :overlay="false">
+      <van-datetime-picker v-model="currentDate" type="datetime" :min-date="minDate" :max-date="maxDate" />
+    </van-popup>
+
   </div>
 </template>
 
@@ -57,7 +61,13 @@
     data() {
       return {
         value6: '',
-        userName: '可爱的小土豆'
+        userName: '',
+        minHour: 10,
+        maxHour: 20,
+        minDate: new Date(),
+        maxDate: new Date(2019, 10, 1),
+        currentDate: new Date(),
+        show: false
       }
     },
     mounted() {
@@ -71,6 +81,9 @@
     methods: {
       _login() {
         this.$emit('login', 1)
+      },
+      _register() {
+        this.$emit('login', 4)
       }
     }
   }

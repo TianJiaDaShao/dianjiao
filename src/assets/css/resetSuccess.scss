@@ -57,3 +57,55 @@
     margin-top: 16px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .resetSuccess {
+    width: 85vw;
+    height: 40vh;
+
+    .closeBox {
+      width: 85vw;
+      height: 10vh;
+      padding-right: 200px;
+
+      .el-icon-close {
+        font-size: 50px;
+        color: #CCCCCC;
+      }
+    }
+
+    img {
+      width: 60vw;
+      height: 20vw;
+      margin-bottom: 43px;
+    }
+
+    .iconBox {
+      display: flex;
+      align-items: center;
+
+      .el-icon-circle-check {
+        font-size: 40px;
+        color: #5cba77;
+      }
+
+      span {
+        font-size: 40px;
+        font-family: PingFangSC-Regular;
+        font-weight: 400;
+        color: rgba(102,102,102,1);
+        line-height: 40px;
+        padding-left: 10px;
+      }
+    }
+
+    p {
+      font-size: 26px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(102,102,102,1);
+      line-height: 25px;
+      margin-top: 40px;
+    }
+  }
+}

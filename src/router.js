@@ -4,6 +4,7 @@ import index from './views/index.vue'
 import mainPage from './views/mainPage.vue'
 import filter from '@/childrenComponents/filter.vue'
 import meetingRoom from '@/childrenComponents/meetingRoom.vue'
+import order from '@/childrenComponents/order.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,9 @@ export default new Router({
     }, {
       path: 'meetingRoom',
       component: meetingRoom
+    }, {
+      path: 'order',
+      component: order
     }]
   }]
 })

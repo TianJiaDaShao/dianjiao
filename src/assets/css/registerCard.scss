@@ -95,3 +95,53 @@
     margin-top: 39px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .registerCard {
+    width: 85vw;
+    height: 70vh;
+
+    .closeBox {
+      width: 85vw;
+      height: 10vh;
+      padding-right: 200px;
+
+      .el-icon-close {
+        font-size: 50px;
+        color: #CCCCCC;
+      }
+    }
+
+    img {
+      width: 60vw;
+      height: 20vw;
+      margin-bottom: 43px;
+    }
+
+    input {
+      width: 60vw;
+      height: 10vw;
+      border: 1pX solid #eee;
+    }
+
+    .identifyingCodeBox {
+      width: 60vw;
+
+      input {
+        width: 30vw;
+      }
+
+      a {
+        width: 30vw;
+        height: 10vw;
+        line-height: 10vw;
+      }
+    }
+
+    .resetBtn {
+      width: 60vw;
+      height: 10vw;
+      line-height: 10vw;
+    }
+  }
+}

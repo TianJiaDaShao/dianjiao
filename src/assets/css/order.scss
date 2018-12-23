@@ -1,0 +1,280 @@
+.orderPage {
+  background: rgb(244,244,244);
+  padding: 50px 100px;
+	min-height: 1000px;
+	.messageBox{
+		width: 1240px;
+		height: 266px;
+		background-color: #fff;
+		padding:13px 29px;
+		box-sizing: border-box;
+		margin: 0 auto 36px;
+		h2{
+			background-color:	rgb(255,121,2);
+			color: #fff;
+			width: 157px;
+			height: 40px;
+			padding: 9px 32px;
+			font-size: 22px;
+			box-sizing: border-box;
+			margin-bottom: 12px;
+		}
+		.msgbox{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			img{
+				width: 264px;
+				height: 173px;
+			}
+			.msgconbox{
+				margin-top: 7px;
+				margin-left: 40px;
+				color: #000;
+				font-size: 20px;
+				p{
+					margin-bottom: 20px;
+				}
+				p:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.personBox{
+		width: 1240px;
+		height: 140px;
+		background-color: #fff;
+		padding:13px 29px;
+		box-sizing: border-box;
+		margin: 0 auto 36px;
+		h2{
+			background-color:	rgb(255,121,2);
+			color: #fff;
+			width: 157px;
+			height: 40px;
+			padding: 9px 20px;
+			font-size: 22px;
+			box-sizing: border-box;
+			margin-bottom: 12px;
+		}
+		.msgbox{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.msgconbox{
+				margin-top: 25px;
+				color: #000;
+				font-size: 20px;
+				p{
+					float: left;
+					margin-right: 80px;
+				}
+			}
+		}
+	}
+	.priceBox{
+		width: 1240px;
+		height: 239px;
+		background-color: #fff;
+		padding:13px 29px;
+		box-sizing: border-box;
+		margin: 0 auto 63;
+		position: relative;
+		h2{
+			background-color:	rgb(255,121,2);
+			color: #fff;
+			width: 157px;
+			height: 40px;
+			padding: 9px 20px;
+			font-size: 22px;
+			box-sizing: border-box;
+			margin-bottom: 12px;
+		}
+		.msgbox{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.msgconbox{
+				margin-top: 10px;
+				color: #000;
+				font-size: 20px;
+				p{
+					margin-bottom: 16px;
+				}
+			}
+		}
+		.all{
+			position: absolute;
+			bottom:22px;
+			right:25px;
+			color:rgb(252,29,29);
+			font-size: 36px;
+		}
+	}
+	.buttonbox{
+		width: 1240px;
+			height: 85px;
+		.el-button{
+			width: 480px;
+			height: 85px;
+			padding: 25px 170px;
+			color:#fff;
+			background-color: rgb(255,121,2);
+			font-size: 36px;
+			float: right;
+			margin-top: 63px;
+		}
+	}
+ 
+}
+
+@media screen and (max-width: 750px) {
+	body{
+		background: rgb(244,244,244);
+		
+	}
+	.orderPage {
+		padding: 30px 30px;
+		padding-bottom: 460px;
+		height: 100%;
+		.messageBox{
+			width: 1240px;
+			height: auto;
+			background-color: #fff;
+			padding:13px 29px;
+			box-sizing: border-box;
+			margin: 0 auto 50px;
+			h2{
+				background-color:	rgb(255,121,2);
+				color: #fff;
+				width: 300px;
+				height: 90px;
+				text-align: center;
+				line-height: 70px;
+				font-size: 40px;
+				box-sizing: border-box;
+				margin-bottom: 30px;
+				margin-top: 20px;
+			}
+			.msgbox{
+				display: block;
+				img{
+					width: 1064px;
+					height: 473px;
+					display: block;
+					margin: 0 auto;
+				}
+				.msgconbox{
+					margin-top: 30px;
+					margin-left: 60px;
+					color: #000;
+					font-size: 20px;
+					p{
+						margin-bottom: 30px;
+					}
+					p:last-child{
+						margin-bottom: 30px;
+					}
+					.el-date-editor{
+// 						width: 600px;
+// 						height: 00px;
+					}
+				}
+			}
+		}
+		.personBox{
+			width: 1240px;
+			height: auto;
+			background-color: #fff;
+			padding:13px 29px;
+			box-sizing: border-box;
+			margin: 0 auto 50px;
+			h2{
+				background-color:	rgb(255,121,2);
+				color: #fff;
+				width: 300px;
+				height: 90px;
+				text-align: center;
+				line-height: 70px;
+				font-size: 40px;
+				box-sizing: border-box;
+				margin-bottom: 30px;
+				margin-top: 20px;
+			}
+			.msgbox{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				.msgconbox{
+					margin-top: 25px;
+					color: #000;
+					font-size: 20px;
+					p{
+						float: left;
+						margin-right: 80px;
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+		.priceBox{
+			width: 1240px;
+			height: auto;
+			background-color: #fff;
+			padding:13px 29px 100px;
+			box-sizing: border-box;
+			margin: 0 auto 63px;
+			position: relative;
+			h2{
+				background-color:	rgb(255,121,2);
+				color: #fff;
+				width: 300px;
+				height: 90px;
+				text-align: center;
+				line-height: 70px;
+				font-size: 40px;
+				box-sizing: border-box;
+				margin-bottom: 30px;
+				margin-top: 20px;
+			}
+			.msgbox{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				.msgconbox{
+					margin-top: 10px;
+					color: #000;
+					font-size: 20px;
+					p{
+						margin-bottom: 30px;
+					}
+				}
+			}
+			.all{
+				position: absolute;
+				bottom:22px;
+				right:25px;
+				color:rgb(252,29,29);
+				font-size: 50px;
+			}
+		}
+		.buttonbox{
+			width: 1240px;
+			height: 105px;
+			margin: 0 auto;
+			.el-button{
+				width: 520px;
+				height: 105px;
+				text-align: center;
+				line-height: 65px;
+				color:#fff;
+				background-color: rgb(255,121,2);
+				font-size: 36px;
+				margin: 63px auto;
+			}
+		}
+	 
+	}
+
+}
