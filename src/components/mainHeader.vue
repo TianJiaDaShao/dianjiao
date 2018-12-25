@@ -1,26 +1,24 @@
 <template>
   <header>
-    <div class="headerLeft">
+    <div class="headerLeft" @click="goIndex">
       <h1>点教网</h1>
       <a href="###">24<span>dianjiao</span>.com</a>
     </div>
     <div class="headerRight">
       <ul>
-        <li><a href="###">联系我们</a></li>
-        <li><a href="###">加盟入口</a></li>
-        <li><a href="###">平台简介</a></li>
-        <li><a href="###">帮助中心</a></li>
+        <li @click="goFree"><a href="###">免费发布教点</a></li>
+        <li @click="goHelp"><a href="###">帮助中心</a></li>
       </ul>
       <div class="border"></div>
-      <el-dropdown>
+      <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link">
           <img src="" alt="">
           {{userName}}
           <i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>我的订单</el-dropdown-item>
-          <el-dropdown-item>个人资料</el-dropdown-item>
+          <el-dropdown-item command="goMyOrder">我的订单</el-dropdown-item>
+          <el-dropdown-item command="goSet">个人资料</el-dropdown-item>
           <el-dropdown-item>退出</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -35,6 +33,39 @@
       return {
         value6: '',
         userName: '可爱的小土豆'
+      }
+    },
+    methods: {
+      goFree() {
+        this.$router.push({
+          path: '/mainPage/free'
+        })
+      },
+      goHelp() {
+        this.$router.push({
+          path: '/mainPage/helpCenter'
+        })
+      },
+      handleCommand(command) {
+        switch (command) {
+          case 'goMyOrder':
+            this.$router.push({
+              path: '/mainPage/myOrder'
+            })
+            break;
+          case 'goSet':
+            this.$router.push({
+              path: '/mainPage/set'
+            })
+            break;
+          default:
+
+        }
+      },
+      goIndex(){
+        this.$router.push({
+          path: '/'
+        })
       }
     }
   }

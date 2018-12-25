@@ -37,7 +37,7 @@
     </section>
     <h2>教室分类</h2>
     <section class="classRoomBox">
-      <a href="###">
+      <a href="###" @click="goMeetingRoom">
         <img src="@/assets/images/pic1.png" alt="">
         <span>文化教育</span>
         <p>120m 20-40人</p>
@@ -115,6 +115,11 @@
     methods: {
       changeCard(res) {
         this.card = res
+      },
+      goMeetingRoom(){
+        this.$router.push({
+          path: '/mainPage/meetingRoom'
+        })
       }
     },
     components: {

@@ -17,10 +17,8 @@
       </div>
       <div class="headerRight">
         <ul>
-          <li><a href="###">联系我们</a></li>
-          <li><a href="###">加盟入口</a></li>
-          <li><a href="###">平台简介</a></li>
-          <li><a href="###">帮助中心</a></li>
+          <li @click="goFree"><a href="###">免费发布教点</a></li>
+          <li @click="goHelp"><a href="###">帮助中心</a></li>
         </ul>
         <div class="border"></div>
         <a href="###" v-if="!userName" class="login" @click="_login">登 录</a>
@@ -32,20 +30,20 @@
             <i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>我的订单</el-dropdown-item>
-            <el-dropdown-item>个人资料</el-dropdown-item>
+            <el-dropdown-item @click="goMyOrder">我的订单</el-dropdown-item>
+            <el-dropdown-item @click="goSet">个人资料</el-dropdown-item>
             <el-dropdown-item>退出</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </div>
     </header>
     <div class="searchCard">
-      <img src="@/assets/images/clock.png" alt="">
+      <!-- <img src="@/assets/images/clock.png" alt=""> -->
       <el-date-picker v-model="value6" type="datetimerange" start-placeholder="开始日期" end-placeholder="结束日期" :default-time="['12:00:00']">
       </el-date-picker>
       <input class="personNumber" type="text" placeholder="可容人数">
       <input class="address" type="text" placeholder="地址">
-      <a href="###">搜索点教网</a>
+      <a href="###" @click="goFilter">搜索点教网</a>
     </div>
     <van-popup v-model="show" position="bottom" :overlay="false">
       <van-datetime-picker v-model="currentDate" type="datetime" :min-date="minDate" :max-date="maxDate" />
@@ -84,6 +82,31 @@
       },
       _register() {
         this.$emit('login', 4)
+      },
+      goFilter() {
+        this.$router.push({
+          path: '/mainPage/filter'
+        })
+      },
+      goFree() {
+        this.$router.push({
+          path: '/mainPage/free'
+        })
+      },
+      goHelp() {
+        this.$router.push({
+          path: '/mainPage/helpCenter'
+        })
+      },
+      goMyOrder() {
+        this.$router.push({
+          path: '/mainPage/myOrder'
+        })
+      },
+      goSet() {
+        this.$router.push({
+          path: '/mainPage/set'
+        })
       }
     }
   }

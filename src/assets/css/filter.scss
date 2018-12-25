@@ -1,4 +1,5 @@
 .filterPage {
+  padding-bottom: 100px;
   .conditionBox {
     width: 1440px;
     height: 156px;
@@ -187,4 +188,71 @@
       }
     }
   }
+
+  .cardBox {
+    width: 1440px;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+
+    a {
+      width: 400px;
+      height: 309px;
+      margin-top: 30px;
+
+      img {
+        width: 400px;
+        height: 250px;
+      }
+
+      p {
+        width: 121px;
+        height: 34px;
+        background-color: #22c575;
+        font-family: STHeitiSC-Medium;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 34px;
+        position: absolute;
+        top: 250px - 34px;
+      }
+
+      h4 {
+        font-family: STHeitiSC-Light;
+        font-size: 24px;
+        color: #4a4a4a;
+        margin-top: 11px;
+      }
+
+      .msgBox {
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+
+        span {
+          flex: 1;
+          font-family: STHeitiSC-Light;
+          font-size: 20px;
+          color: #9b9b9b;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        i {
+          font-family: STHeitiSC-Light;
+          font-size: 20px;
+          color: #9b9b9b;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  
 }

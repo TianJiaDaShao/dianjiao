@@ -42,6 +42,68 @@
         </a>
       </div>
     </div>
+    <div class="cardBox">
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+      <a href="###">
+        <img src="@/assets/images/Group6.png" alt="">
+        <p>¥50/小时</p>
+        <h4>xxxxxxx教室</h4>
+        <div class="msgBox">
+          <span>xxx教学地点-202</span>
+          <i>200-5000人</i>
+          <i>1500m</i>
+        </div>
+      </a>
+    </div>
   </div>
 </template>
 
